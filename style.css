@@ -1,0 +1,609 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-style: none;
+    font-family: "Ubuntu", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    z-index: 1000;
+}
+
+.logo{
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+li a{
+    position: relative;
+    color: rgb(230, 230, 230);
+    font-weight: 300;
+    transition: 0.3s ease-in-out;
+}
+
+li a:hover{
+    border-bottom: 3px solid rgba(186,219,123,1);
+}
+
+
+
+.subscribe-btn{
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.8s ease-in-out;
+    background: linear-gradient(90deg, rgba(186,219,123,1) 20%, rgb(230, 230, 230) 80%);
+}
+
+.subscribe-btn:hover{
+    background: linear-gradient(90deg,  rgb(230, 230, 230) 20%, rgba(186,219,123,1) 80%);
+    transform: scale(1.03);
+}
+
+section{
+    height: 100vh;
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+
+.first-screen{
+    background-image: url(imgs/abstract-blur-fitness-gym-equipment-background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.7rem;
+    color: rgb(230, 230, 230);
+}
+
+.first-screen .first-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.first-container h1{
+    font-style: italic;
+}
+
+#main-btn{
+    font-size: 1.3rem;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    overflow: hidden;
+}
+
+.about .about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+  
+}
+
+.about .about-container p{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    width: 50%;
+    font-weight: 500;
+}
+
+.about-container h1{
+    font-size: 4rem;
+    font-style: italic;
+    color: rgb(186,219,123,1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.about-container h1:hover{
+    filter: brightness(120%);
+    transform: scale(1.05);
+}
+
+.img-1, .img-2{   
+    height: auto;
+    width: 340px;
+    position: relative;
+    top: 10%;
+    right: 10%;
+}
+
+.img-1{
+    position: relative;
+    top: 150px;
+    right: 300px;
+}
+
+.img-2{
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 20px;
+}
+
+.services-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.serv-text h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: rgb(186,219,123,1);
+    font-style: italic;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.serv-text h1:hover{
+    filter: brightness(120%);
+    transform: scale(1.05); 
+}
+
+.serv-text p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.serv-img {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    flex-wrap: wrap; 
+}
+
+.serv-img .card {
+    width: 500px; 
+    height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.015);
+}
+
+.serv-img p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.feedbacks{
+    background-color: rgb(20, 20, 20);
+}
+
+.feed-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.feed-title{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: rgb(186,219,123,1);
+    font-style: italic;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.feed-title:hover{
+    filter: brightness(120%);
+    transform: scale(1.05); 
+}
+
+.feeds{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-feed img{
+    width: 400px;
+    height: auto;
+    padding: 10px;
+}
+
+.card-feed p{
+    width: 400px;
+    color: black;
+    background-color: rgb(186,219,123,1);
+    border-right: 1px solid black;
+    margin-right: 10px;
+    margin-top: -13px;
+    padding: 30px;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.nomes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(imgs/bgcontact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken; 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transform: rotate(360deg);
+}
+
+.contact-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(186,219,123,1);
+    font-size: 3rem;
+    font-style: italic;
+    margin-left: -50px;
+    margin-bottom: 150px;
+    text-align: start;
+}
+
+.newsletter {
+    position: absolute;
+    right: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    margin-right: 10%;
+    width: auto;
+}
+
+.newsletter h1{
+    font-size: 2rem;
+}
+
+.newsletter input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 50%; 
+    border: 2px solid white;
+    font-weight: 800;
+}
+
+.newsletter button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%; 
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgba(186,219,123,1);
+    font-weight: 800;
+    font-style: italic;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.newsletter button:hover{
+    opacity: 1;
+}
+
+
+
+.contact-container h1{
+    transition: 0.3s ease-in-out;
+}
+
+.contact-container h1:hover{
+    filter: brightness(120%);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgba(186,219,123,1);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    gap: 300px;
+    color: black;
+}
+
+.infos h2{
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+.infos p{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(219, 219, 219);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, rgb(186,219,123,1), rgb(20, 20, 20));
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .subscribe-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .first-screen {
+        font-size: 2.5rem;
+        padding: 6rem 5%;
+    }
+
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .about-container p {
+        width: 100%; 
+        font-size: 1.1rem;
+    }
+
+    .img-1, .img-2 {
+        display: none;
+    }
+
+    .serv-text h1 {
+        font-size: 3rem;
+    }
+
+
+    .feed-title{
+        font-size: 2rem;
+    }
+
+    .card-feed img {
+        width: 50%;
+        height: 300px;
+    }
+
+    .card-feed p {
+        height: 300px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .subscribe-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .first-screen {
+        font-size: 2.5rem;
+        padding: 5rem 2%;
+    }
+
+    .about .about-container p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .img-1, .img-2 {
+        display: none; /* Remove as imagens */
+    }
+
+    .newsletter{
+        display: none;
+    }
+
+    .serv-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-container {
+        padding: 10px;
+    }
+
+    .serv-img .card{
+        height: 100px;
+        width: 200px;
+    }
+
+    .card-feed img {
+        width: 100%;
+    }
+
+    .card-feed p {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 15px;
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 600px) {
+    header {
+        gap: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    ul {
+        gap: 0.5rem;
+    }
+
+    .subscribe-btn {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .first-screen {
+        font-size: 1.5rem;
+        padding: 4rem 1%;
+    }
+
+
+    .about .about-container h1{
+        font-size: 2rem;
+    }
+
+    .about .about-container p {
+        font-size: 0.9rem;
+    }
+
+    .services {
+        padding: 10px;
+    }
+
+    .serv-text h1 {
+        font-size: 2rem;
+    }
+ 
+    .card-feed p{
+        font-size: 1rem;
+    }
+
+    .card-feed img,
+    .card-feed p {
+        width: 180px;
+        height: 45%;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+    }
+
+    .footer {
+        gap: 0.5rem;
+        padding: 10px;
+        height: auto;
+    }
+
+    .newsletter {
+        display: none;
+        margin-right: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact-container {
+        font-size: 2rem;
+        margin: 0;
+    }
+}
